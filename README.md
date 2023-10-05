@@ -1,0 +1,1 @@
+Es un bot para controlar las respuestas de whatsapp con la pagina de openai
