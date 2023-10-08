@@ -27,7 +27,8 @@ def enviar_respuesta():
 def buscar_respuesta():
 
 		# pegar texto
-	posicion = pt.locateCenterOnScreen('imagenes/pegar_pregunta.png', grayscale=False, confidence=.9)
+	posicion = pt.locateCenterOnScreen('imagenes/bot_green.png', grayscale=False, confidence=.9)
+	# posicion = pt.locateCenterOnScreen('imagenes/pegar_pregunta.png', grayscale=False, confidence=.9)
 	if posicion is not None:
 		x = (int(posicion[0])*pct_x)+50
 		y = int(posicion[1])*pct_y
@@ -37,10 +38,10 @@ def buscar_respuesta():
 		pt.hotkey("ctrl", "v")
 		pt.press("enter")
 		# pt.write(". utiliza como max 100 palabras")
-		sleep(12)
+		sleep(14)
 
 		# copy respuesta: 
-	posicion = pt.locateCenterOnScreen('imagenes/copy_tilde.png', grayscale=False, confidence=.9)
+	posicion = pt.locateCenterOnScreen('imagenes/tilde_azul.png', grayscale=False, confidence=.9)
 	if posicion is not None:
 		x = int(posicion[0])*pct_x
 		y = int(posicion[1])*pct_y
